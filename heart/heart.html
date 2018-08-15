@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>canvas</title>
+    <style type="text/css">
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #main
+        {
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="canvas_bg.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            setTimeout(function () { go(); }, 8000);
+        }
+        function go() {
+            $('body').animate({ "opacity": 0.5 }, 3000, function () {
+                window.location.href = "../photo/photo.html";
+            })
+        }
+    </script>
+</head>
+<body>
+    <canvas id="c" style="position: absolute; z-index: -1; text-align: center;"></canvas>
+    <div id="main">
+        <h3>
+            小虾米,你以前总是抱怨我不够浪漫,不够sweet.</h3>
+        <h3>
+            确实,我也觉得自己在这些方面要多下功夫才行.</h3>
+        <h3>
+            所以这份礼物构思了很久,只是一直,没时间,</h3>
+        <h3>
+            虽然做得不怎样,但是希望你喜欢~~</h3>
+        <h1>
+            对了,七夕情人节快乐</h1>
+    </div>
+</body>
+</html>
